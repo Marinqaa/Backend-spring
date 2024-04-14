@@ -1,0 +1,123 @@
+html{
+    background-color: aliceblue;
+}
+
+#container{
+    width: 90%;
+    margin: auto;
+    font-family: "Tahoma", "sans-serif";
+    font-size: 1rem;
+}
+#header{
+    width: 100%;
+    background: #ddd;
+    text-align: center;
+    font-size: 2.5rem;
+    height: 150px;
+
+}
+#header h1{
+    margin: 0;
+    padding-top: 1rem;
+}
+
+#middle{
+    margin-top: 1rem;
+}
+
+#menu{
+    width: 10rem;
+    float: left;
+    margin-bottom: 1rem;
+}
+#news{
+    background: #ddd;
+    padding: 0 0.3rem 0.3rem;
+}
+
+#content{
+    background: #ccc;
+    text-align: justify;
+    padding: 0.5rem;
+    margin-left: 11rem;
+    margin-bottom: 1rem;
+}
+
+#burger, [for="burger"]{
+    display: none;
+}
+
+#menu ul{
+    margin:0;
+    padding:0;
+}
+#menu li{
+    list-style: none;
+    font-size: 90%;
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+    background: #ddd;
+    padding:0.3rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#menu a:hover {
+    color: white;
+    background: #888;
+}
+
+
+
+@media only screen and (max-width:640px) {
+
+    #menu{
+        display: none;
+        width:100%;
+        padding: 0;
+    }
+
+    #content{
+        margin-left: 0;
+        clear: both;
+    }
+
+    #news{
+        display: block;
+        text-align: center;
+        background: #aaa;
+    }
+
+    #container{
+        min-width: 320px;
+        width: 100%;
+    }
+
+    [for="burger"]{
+        text-align: center;
+        display: block;
+    }
+
+    #burger:checked + label + #menu{
+        display: block;
+    }
+
+}
+
+#footer{
+    clear: both;
+    background: #888;
+    color: white;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+
+
+
+
+

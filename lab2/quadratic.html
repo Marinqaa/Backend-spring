@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT-Lab2</title>
+    <link rel="stylesheet" type="text/css" href="styl.css"/>
+    <script type = "text/javascript" src = "script.js"></script>
+    <script type = "text/javascript" src = "quadratic.js"></script>
+</head>
+<body onload="functions(); clock(); setInterval(clock, 1000); hook();" >
+<div id="container">
+    <div id="header">
+        <h1>Header</h1>
+    </div>
+    <div id="middle">
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Main page</a></li>
+                <li><a href="quadratic.html">ax<sup>2</sup>+bx+c=0</a></li>
+                <li><a href="">Link3</a></li>
+            </ul>
+            <div id="news">
+                <p id = "news1">news1</p>
+                <p id = "news2">news2</p>
+            </div>
+        </div>
+        <div id="content">
+            <form id ="data" name="data">
+                <input placeholder="a" type="number" id="coeff_a" name="ca">x<sup>2</sup>+
+                <input placeholder="b" type="number" id="coeff_b" name="cb">x+
+                <input placeholder="c" type="number" id="coeff_c" name="cc"><br/>
+                <div id = "button">
+                    <input type="button" id="calculate" value="Calculate" >
+                </div>
+            </form>
+            <div id="list"></div>
+        </div>
+    </div>
+    <div id="footer">
+        &copy;2024 DG
+    </div>
+</div>
+</body>
+</html>
